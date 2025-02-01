@@ -1,0 +1,15 @@
+x	y	label	showSelected1	PANEL	group
+0.0312280705153991	-4.81949968184914	control.vs.carbon.additions	control.vs.carbon.additions	1	1
+0.27027960833434	-8.28164717132402	controls.between.experiments	controls.between.experiments	1	2
+0.22379401019125	-3.57501178488069	controls.between.sites	controls.between.sites	1	3
+0.00922922012969923	-3.09249369495059	dim.C.between.sites	dim.C.between.sites	1	4
+-0.0265956938175805	-2.61428992959324	dim.CN.combine.sites	dim.CN.combine.sites	1	5
+0.00456399586914436	-1.55715510421907	dim.compare.sites	dim.compare.sites	1	6
+0.0250826812061036	-3.05119609535962	dim.compare.treatments	dim.compare.treatments	1	7
+0.0933351881610951	-8.10906137543608	control.vs.carbon.additions	control.vs.carbon.additions	2	1
+0.621558739243669	-11.1016276799659	controls.between.experiments	controls.between.experiments	2	2
+0.3094435191119	-4.35727492087315	controls.between.sites	controls.between.sites	2	3
+0.0668083264316195	-3.86228480640822	dim.C.between.sites	dim.C.between.sites	2	4
+0.00280874076825436	-1.22787241608416	dim.CN.combine.sites	dim.CN.combine.sites	2	5
+0.0410094173713252	-4.5255417985394	dim.compare.sites	dim.compare.sites	2	6
+0.0750342693282964	-6.0086375983465	dim.compare.treatments	dim.compare.treatments	2	7

@@ -1,0 +1,1342 @@
+{
+ "geoms": {
+ "geom1_vline_overview": {
+ "geom": "vline",
+"classed": "geom1_vline_overview",
+"aes": {
+ "xintercept": "diff" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"size":        1,
+"help": "Vertical line for no difference when training on same and compare subset." 
+},
+"types": {
+ "xintercept": "numeric",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_hline_overview": {
+ "geom": "hline",
+"classed": "geom2_hline_overview",
+"aes": {
+ "yintercept": "log10.p" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"size":        1,
+"help": "Horizontal line for traditional P-value threshold=0.05." 
+},
+"types": {
+ "yintercept": "numeric",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_text_overview": {
+ "geom": "text",
+"classed": "geom3_text_overview",
+"aes": {
+ "x": "x",
+"y": "y",
+"label": "label" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"help": "Text labels explain meaning of grey lines.",
+"anchor": "start" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_segment_overview": {
+ "geom": "segment",
+"classed": "geom4_segment_overview",
+"aes": {
+ "x": "x",
+"y": "y",
+"colour": "comparison",
+"yend": "yend",
+"xend": "xend",
+"clickSelects": "comparison" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"alpha":      0.7,
+"clickSelects": "comparison",
+"help": "Segments show min/mean/max error differences across comparison subsets.",
+"help_clickSelects": "comparison" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"xend": "numeric",
+"y": "numeric",
+"yend": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_text_overview": {
+ "geom": "text",
+"classed": "geom5_text_overview",
+"aes": {
+ "x": "estimate_mean",
+"y": "log10.p_mean",
+"label": "comparison",
+"showSelected1": "comparison" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"help": "Text shows comparison name.",
+"showSelected": "comparison",
+"help_showSelected": "comparison" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_point_overview": {
+ "geom": "point",
+"classed": "geom6_point_overview",
+"aes": {
+ "x": "estimate",
+"y": "log10.p",
+"colour": "comparison",
+"clickSelects": "comparison_subset",
+"showSelected1": "comparison" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"size":        5,
+"help": "One dot for each comparison subset in selected comparison.",
+"showSelected": "comparison",
+"clickSelects": "comparison_subset",
+"alpha_off":      0.1,
+"help_showSelected": "comparison",
+"help_clickSelects": "comparison_subset" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"fill": "rgb",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_point_overview": {
+ "geom": "point",
+"classed": "geom7_point_overview",
+"aes": {
+ "x": "estimate",
+"y": "log10.p",
+"key": "1",
+"colour": "comparison",
+"clickSelects": "comparison",
+"showSelected1": "comparison_subset" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"size":        5,
+"help": "One dot for selected comparison subset.",
+"showSelected": "comparison_subset",
+"clickSelects": "comparison",
+"alpha_off":      0.5,
+"help_showSelected": "comparison_subset",
+"help_clickSelects": "comparison" 
+},
+"types": {
+ "colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "numeric",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"fill": "rgb",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_text_overview": {
+ "geom": "text",
+"classed": "geom8_text_overview",
+"aes": {
+ "x": "estimate",
+"y": "log10.p",
+"label": "test.group",
+"clickSelects": "comparison_subset",
+"showSelected1": "comparison" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"help": "Text shows comparison subset names.",
+"clickSelects": "comparison_subset",
+"showSelected": "comparison",
+"help_clickSelects": "comparison_subset",
+"help_showSelected": "comparison" 
+},
+"types": {
+ "x": "numeric",
+"y": "numeric",
+"label": "character",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom9_segment_detailsFacet": {
+ "geom": "segment",
+"classed": "geom9_segment_detailsFacet",
+"aes": {
+ "x": "compare_mean",
+"y": "train_subsets",
+"key": "train_subsets",
+"xend": "same_mean",
+"yend": "train_subsets",
+"showSelected1": "comparison_subset" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"colour": "#FF0000",
+"help": "Red segments show differences between same and other/all.",
+"showSelected": "comparison_subset",
+"help_showSelected": "comparison_subset" 
+},
+"types": {
+ "y": "integer",
+"yend": "integer",
+"x": "numeric",
+"xend": "numeric",
+"key": "factor",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom10_text_detailsFacet": {
+ "geom": "text",
+"classed": "geom10_text_detailsFacet",
+"aes": {
+ "x": "-3.5",
+"y": "train_subsets",
+"key": "train_subsets",
+"label": "sprintf(\"Diff Log MSE %.4f %s\", compare_mean - same_mean, ifelse(p.value < 1e-04, \"p<0.0001\", sprintf(\"p=%.4f\", p.value)))",
+"showSelected1": "comparison_subset" 
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"help": "Text shows error difference and P-value in two-sided paired t-test.",
+"showSelected": "comparison_subset",
+"help_showSelected": "comparison_subset" 
+},
+"types": {
+ "y": "integer",
+"x": "numeric",
+"key": "factor",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom11_segment_detailsFacet": {
+ "geom": "segment",
+"classed": "geom11_segment_detailsFacet",
+"aes": {
+ "x": "log10.regr.mse_lo",
+"y": "train_subsets",
+"key": "train_subsets",
+"xend": "log10.regr.mse_hi",
+"yend": "train_subsets",
+"showSelected1": "comparison_subset" 
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"showSelected": "comparison_subset",
+"help": "Black segments show mean +/- SD of test MSE, over 10 train/test splits.",
+"help_showSelected": "comparison_subset" 
+},
+"types": {
+ "y": "integer",
+"yend": "integer",
+"x": "numeric",
+"xend": "numeric",
+"key": "factor",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom12_point_detailsFacet": {
+ "geom": "point",
+"classed": "geom12_point_detailsFacet",
+"aes": {
+ "x": "log10.regr.mse_mean",
+"y": "train_subsets",
+"key": "train_subsets",
+"showSelected1": "comparison_subset" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "transparent",
+"showSelected": "comparison_subset",
+"help": "Black dot for mean of test MSE, over 10 train/test splits.",
+"help_showSelected": "comparison_subset" 
+},
+"types": {
+ "y": "integer",
+"x": "numeric",
+"key": "factor",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom13_abline_absErr": {
+ "geom": "segment",
+"classed": "geom13_abline_absErr",
+"aes": {
+ "slope": "slope",
+"intercept": "intercept" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"help": "Diagonal line shows equality between cv_glmnet and featureless." 
+},
+"types": {
+ "PANEL": "integer",
+"x": "numeric",
+"y": "numeric",
+"xend": "numeric",
+"yend": "numeric",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom14_point_absErr": {
+ "geom": "point",
+"classed": "geom14_point_absErr",
+"aes": {
+ "x": "cv_glmnet",
+"y": "featureless",
+"fill": "comparison",
+"clickSelects": "comparison_subset" 
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"size":        5,
+"colour": "#000000",
+"clickSelects": "comparison_subset",
+"alpha_off":      0.3,
+"help": "One dot for each comparison subset.",
+"colour_off": "transparent",
+"help_clickSelects": "comparison_subset" 
+},
+"types": {
+ "fill": "rgb",
+"x": "numeric",
+"y": "numeric",
+"clickSelects": "character",
+"PANEL": "integer",
+"group": "character" 
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+} 
+},
+"duration": {
+ "comparison_subset":     1000 
+},
+"selectors": {
+ "comparison": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "control.vs.carbon.additions",
+"levels": [ "control.vs.carbon.additions", "controls.between.experiments", "controls.between.sites", "dim.C.between.sites", "dim.CN.combine.sites", "dim.compare.sites", "dim.compare.treatments" ],
+"update": [
+ "geom4_segment_overview",
+"geom5_text_overview",
+"geom6_point_overview",
+"geom7_point_overview",
+"geom8_text_overview" 
+] 
+},
+"comparison_subset": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "control.vs.carbon.additions C",
+"levels": [ "control.vs.carbon.additions C", "control.vs.carbon.additions CN", "control.vs.carbon.additions control", "controls.between.experiments dim", "controls.between.experiments qme", "controls.between.sites GL", "controls.between.sites MC", "controls.between.sites PJ", "controls.between.sites PP", "controls.between.sites glacier_forefield", "controls.between.sites litchfield_island", "dim.C.between.sites GL", "dim.C.between.sites MC", "dim.C.between.sites PJ", "dim.C.between.sites PP", "dim.CN.combine.sites GL", "dim.CN.combine.sites MC", "dim.CN.combine.sites PJ", "dim.CN.combine.sites PP", "dim.compare.sites GL", "dim.compare.sites MC", "dim.compare.sites PJ", "dim.compare.sites PP", "dim.compare.treatments C", "dim.compare.treatments CN", "dim.compare.treatments control" ],
+"update": [
+ "geom6_point_overview",
+"geom7_point_overview",
+"geom8_text_overview",
+"geom9_segment_detailsFacet",
+"geom10_text_detailsFacet",
+"geom11_segment_detailsFacet",
+"geom12_point_detailsFacet",
+"geom14_point_absErr" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "overview": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "right": [
+ "",
+"" 
+],
+"top": [
+ "compare_name: all",
+"compare_name: other" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2" ],
+"ROW": [ 1, 1 ],
+"COL": [ 1, 2 ],
+"compare_name": [ "all", "other" ],
+"SCALE_X": [ 1, 1 ],
+"SCALE_Y": [ 1, 1 ],
+"AXIS_Y": [ true, false ],
+"AXIS_X": [ true, true ],
+"coord_fixed": [ false, false ],
+"width_proportion": [      0.5,      0.5 ],
+"height_proportion": [        1,        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+[
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+],
+"y": [
+ [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+[
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+],
+[
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+],
+"y": [
+ [
+      -12,
+   -10.5,
+      -9,
+    -7.5,
+      -6,
+    -4.5,
+      -3,
+    -1.5,
+       0 
+],
+[
+      -12,
+   -10.5,
+      -9,
+    -7.5,
+      -6,
+    -4.5,
+      -3,
+    -1.5,
+       0 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"xlab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"xrange": [ -0.09401095, 1.086795 ],
+"xline": false,
+"xticks": true,
+"y": [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+"ylab": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"yrange": [ -12.38974, 0.584544 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"xlab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"xrange": [ -0.09401095, 1.086795 ],
+"xline": false,
+"xticks": true,
+"y": [
+      -12,
+      -9,
+      -6,
+      -3,
+       0 
+],
+"ylab": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"yrange": [ -12.38974, 0.584544 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Error difference, cv_glmnet trained on same and compare subset",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "log10(P-value), two-sided paired t-test",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"ylabs": [
+ "-12",
+"-9",
+"-6",
+"-3",
+"0" 
+],
+"title": "Overview, click to select test set",
+"title_size": "14.4pt",
+"options": {
+ "width":      900,
+"height":      400 
+},
+"geoms": [
+ "geom1_vline_overview",
+"geom2_hline_overview",
+"geom3_text_overview",
+"geom4_segment_overview",
+"geom5_text_overview",
+"geom6_point_overview",
+"geom7_point_overview",
+"geom8_text_overview" 
+] 
+},
+"detailsFacet": {
+ "panel_margin_lines":     0.27,
+"legend": {},
+"strips": {
+ "right": [
+ "",
+"cv_glmnet",
+"",
+"featureless" 
+],
+"top": [
+ "No normalization",
+"Normalized MSE in [0,1]",
+"",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3", "4" ],
+"ROW": [ 1, 1, 2, 2 ],
+"COL": [ 1, 2, 1, 2 ],
+"algorithm": [ "cv_glmnet", "cv_glmnet", "featureless", "featureless" ],
+"normalization": [ "No normalization", "Normalized MSE in [0,1]", "No normalization", "Normalized MSE in [0,1]" ],
+"SCALE_X": [ 1, 2, 1, 2 ],
+"SCALE_Y": [ 1, 1, 2, 2 ],
+"AXIS_Y": [ true, false, true, false ],
+"AXIS_X": [ false, false, true, true ],
+"coord_fixed": [ false, false, false, false ],
+"width_proportion": [      0.5,      0.5,      0.5,      0.5 ],
+"height_proportion": [      0.5,      0.5,      0.5,      0.5 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     -4.5,
+      -4,
+    -3.5,
+      -3,
+    -2.5 
+],
+[
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+[
+     -4.5,
+      -4,
+    -3.5,
+      -3,
+    -2.5 
+],
+[
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+],
+"y": [
+ [
+ 1,
+2,
+3,
+4,
+5 
+],
+[
+ 1,
+2,
+3,
+4,
+5 
+],
+[
+ 1,
+2,
+3,
+4,
+5 
+],
+[
+ 1,
+2,
+3,
+4,
+5 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+    -4.75,
+    -4.5,
+   -4.25,
+      -4,
+   -3.75,
+    -3.5,
+   -3.25,
+      -3,
+   -2.75,
+    -2.5 
+],
+[
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+],
+[
+    -4.75,
+    -4.5,
+   -4.25,
+      -4,
+   -3.75,
+    -3.5,
+   -3.25,
+      -3,
+   -2.75,
+    -2.5 
+],
+[
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+],
+"y": [
+ [],
+[],
+[],
+[] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     -4.5,
+      -4,
+    -3.5,
+      -3,
+    -2.5 
+],
+"xlab": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0",
+"-2.5" 
+],
+"xrange": [ -4.79568, -2.327427 ],
+"xline": false,
+"xticks": true,
+"y": [
+ 1,
+2,
+3,
+4,
+5 
+],
+"ylab": [
+ "all",
+"all-same",
+"same",
+"other-same",
+"other" 
+],
+"yrange": [      0.4,      5.6 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"xlab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"xrange": [    -0.05,     1.05 ],
+"xline": false,
+"xticks": true,
+"y": [
+ 1,
+2,
+3,
+4,
+5 
+],
+"ylab": [
+ "all",
+"all-same",
+"same",
+"other-same",
+"other" 
+],
+"yrange": [      0.4,      5.6 ],
+"yline": false,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+     -4.5,
+      -4,
+    -3.5,
+      -3,
+    -2.5 
+],
+"xlab": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0",
+"-2.5" 
+],
+"xrange": [ -4.79568, -2.327427 ],
+"xline": false,
+"xticks": true,
+"y": [
+ 1,
+2,
+3,
+4,
+5 
+],
+"ylab": [
+ "all",
+"all-same",
+"same",
+"other-same",
+"other" 
+],
+"yrange": [      0.4,      5.6 ],
+"yline": false,
+"yticks": true 
+},
+"axis4": {
+ "x": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"xlab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"xrange": [    -0.05,     1.05 ],
+"xline": false,
+"xticks": true,
+"y": [
+ 1,
+2,
+3,
+4,
+5 
+],
+"ylab": [
+ "all",
+"all-same",
+"same",
+"other-same",
+"other" 
+],
+"yrange": [      0.4,      5.6 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "log10(Mean Squared Error)",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "train_subsets",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0",
+"-2.5",
+"0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"ylabs": [
+ "all",
+"all-same",
+"same",
+"other-same",
+"other" 
+],
+"title": "Log MSE for selected test set",
+"title_size": "14.4pt",
+"options": {
+ "width":      650,
+"height":      250 
+},
+"geoms": [
+ "geom9_segment_detailsFacet",
+"geom10_text_detailsFacet",
+"geom11_segment_detailsFacet",
+"geom12_point_detailsFacet" 
+] 
+},
+"absErr": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ true ],
+"width_proportion": [ 0.9489599 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     -4.5,
+      -4,
+    -3.5,
+      -3 
+] 
+],
+"y": [
+ [
+     -4.5,
+      -4,
+    -3.5,
+      -3 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+     -4.5,
+   -4.25,
+      -4,
+   -3.75,
+    -3.5,
+   -3.25,
+      -3 
+] 
+],
+"y": [
+ [
+     -4.5,
+   -4.25,
+      -4,
+   -3.75,
+    -3.5,
+   -3.25,
+      -3,
+   -2.75 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+     -4.5,
+      -4,
+    -3.5,
+      -3 
+],
+"xlab": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0" 
+],
+"xrange": [ -4.703278, -2.804421 ],
+"xline": false,
+"xticks": true,
+"y": [
+     -4.5,
+      -4,
+    -3.5,
+      -3 
+],
+"ylab": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0" 
+],
+"yrange": [ -4.67254, -2.671553 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "cv_glmnet",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "featureless",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0" 
+],
+"ylabs": [
+ "-4.5",
+"-4.0",
+"-3.5",
+"-3.0" 
+],
+"title": "Log MSE, train=same",
+"title_size": "14.4pt",
+"options": {
+ "width":      250,
+"height":      250 
+},
+"geoms": [
+ "geom13_abline_absErr",
+"geom14_point_absErr" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/necromass/blob/main/data-qsip-jeff/figure-scatter/figure-scatter-interactive.R",
+"video": "https://vimeo.com/1052541453",
+"title": "Accuracy of predicting qSIP data" 
+}
